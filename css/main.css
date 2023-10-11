@@ -1,0 +1,113 @@
+@import url('https://fonts.cdnfonts.com/css/white-star-free');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    overflow-y: overlay;
+    background-color: black;
+    color: white;  
+    background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-attachment: fixed; /* Opcional: fija el fondo para que no se desplace con el contenido */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */                                 
+    transition: background 1s;
+}
+
+/* Estilos para la primera sección */
+.section1 {
+    opacity: 0; /* La sección es inicialmente invisible */
+    transition: opacity 1s; /* Transición para difuminar */
+}
+
+::after, ::before {
+    --tw-content: '';
+}
+                             
+.ws{
+    font-family: 'White Star free', sans-serif;
+}
+
+.cont1 h1 {
+    font-size: 80px;
+}
+
+.cont1 {
+    display: flex;
+    justify-content: center;
+}
+
+.description {
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+h2.ws {
+    margin-top: 0; /* Elimina el espacio superior predeterminado del h2 */
+}
+
+.qs {
+    margin-top: 20px; /* Espacio entre el h2 y el div */
+}
+
+/* CSS para centrar la sección y el h1 */
+.section1 {
+    height: 100vh; /* Establece la altura de la sección para que ocupe toda la ventana visible (viewport height) */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Cambia el color de fondo según tu preferencia */
+}
+
+/* Opcional: Estilo para el h1 */
+.section1 h1 {
+    font-size: 150px; /* Ajusta el tamaño de la fuente según tus necesidades */
+    text-align: center;
+    margin: 0; /* Elimina el margen predeterminado para el h1 */
+}
+
+/* CSS para centrar la sección y el h1 */
+.section2 {
+    height: 100vh; /* Establece la altura de la sección para que ocupe toda la ventana visible (viewport height) */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Cambia el color de fondo según tu preferencia */
+    position: absolute;
+    background: rgb(0, 0, 0, 0.7);
+
+}
+
+.section2 .description {
+    width: 80%;
+}
+
+.section2 h2{
+    font-size: 100px;
+}
+
+.section2 p{
+    font-size: 30px;
+}
+
+/* Contenedor para el ícono SVG */
+.svg-container {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    z-index: 99999;
+    top: 82%;
+    filter: brightness(10) saturate(0);
+    -webkit-animation: opa 1.8s cubic-bezier(0.08, 0.82, 0.17, 1) both 4.5s;
+    animation: opa 1.8s cubic-bezier(0.08, 0.82, 0.17, 1) both 4.5s;
+}
+
+/* Estilo para el ícono SVG */
+.svg-container svg {
+    fill: #ffffff; /* Color del ícono */
+}
