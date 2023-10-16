@@ -27,12 +27,9 @@ setTimeout(function() {
 function transitionToImageBackground() {
     const body = document.body;
 
-    // Cambia el fondo de negro a la imagen deseada
-    body.style.backgroundImage = "url('https://i.imgur.com/prtQgf3.jpg')";
-
     // Espera un momento antes de aplicar la transición
     setTimeout(function() {
-        body.style.backgroundColor = "transparent"; // Cambia el fondo de negro a transparente
+        body.style.opacity = "1";
     }, 200); 
 }
 
